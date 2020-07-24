@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/akaduwela/CatPi/issues"
   },
-  "homepage": "https://github.com/akaduwela/CatPi#readme"
+  "homepage": "https://github.com/akaduwela/CatPi#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
