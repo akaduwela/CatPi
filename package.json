@@ -1,0 +1,19 @@
+{
+  "name": "catpi",
+  "version": "1.0.0",
+  "description": "Cat Feeder Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akaduwela/CatPi.git"
+  },
+  "author": "Asitha Kaduwela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akaduwela/CatPi/issues"
+  },
+  "homepage": "https://github.com/akaduwela/CatPi#readme"
+}
