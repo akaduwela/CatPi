@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
   <title>CatPi Project Portal</title>
-  <header>
-    <h1>CatPi Home Page</h1>
-  </header>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+  </head>
   <body>
-
+    <h1>CatPi Home Page</h1>
+    <h2>Control GPIO 4</h2>
+    <button type="button" id="state" class="on" onclick="LEDOn()">ON</button>
+    <button type="button" id="state" class="off" onclick="LEDOff()">OFF</button>
   </body>
-  <script src="index.js"></script>
+  <script src="socket.io-client/dist/socket.io.js"></script>
+  
+  <script>
+    var socket = io('http://192.168.1.109:3000'); //load socket.io-client and connect to the host
+        function LEDOn() {
+            socket.emit("state", 1); //send button state to server
+        }
+
+        function LEDOff() {
+            socket.emit("state", 0); //send button state to server
+        }
+  </script>
 </html>
